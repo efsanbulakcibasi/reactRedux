@@ -13,7 +13,7 @@ const CourseList = () => {
         <section>
           <header>
             <h2>Sepetim</h2>
-            <h4>Sepet boş</h4>  
+            <h4 className="empty">Sepet boş</h4>
           </header>
         </section>
       ) : (
@@ -22,21 +22,25 @@ const CourseList = () => {
             <h2>Sepetim</h2>
           </header>
           <div className="item">
-          {cartItems.map((item) => {
-            return <CourseItems key={item.id} {...item} />
+            {cartItems.map((item) => {
+              return <CourseItems key={item.id} {...item} />;
             })}
           </div>
           <footer>
             <hr />
-            <div>
-                <h4>Toplam tutar: <span>{total}TL</span></h4>
+            <div className="footer">
+              <h4>
+                Toplam tutar: <span>{total}TL</span>
+              </h4>
             </div>
-            <button
-             className="cartClearButton"
-             onClick={() => dispatch(clearCart())}
-            >
-              Temizle
-            </button>
+            <div className="cleare">
+              <button
+                className="cartClearButton"
+                onClick={() => dispatch(clearCart())}
+              >
+                Temizle
+              </button>
+            </div>
           </footer>
         </section>
       )}

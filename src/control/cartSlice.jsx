@@ -32,8 +32,6 @@ const cartSlice = createSlice({
       }
     },
     totalItems:(state) => {
-      // eslint-disable-next-line no-debugger
-      debugger
       let total =0;
       let quantity=0;
       state.cartItems.forEach((item) => {
