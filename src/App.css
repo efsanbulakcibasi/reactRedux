@@ -1,0 +1,80 @@
+.App {
+}
+p {
+  text-align: center;
+  width: 18px;
+  border-radius: 50%;
+  margin: 0;
+  background-color: aliceblue;
+  color: lightcoral;
+  font-weight: 900;
+}
+h2{
+  text-align:center;
+  color: lightcoral;
+  font-size: 30px;
+  font-weight: 900;
+}
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: lightcoral;
+}
+.header {
+  background-color: #0d1117;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a-item {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.a-item-01 {
+}
+.a-item-02 {
+  position: relative;
+}
+.a-item-03 {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  position: absolute;
+  right: 9px;
+  top: 20px;
+  color: lightcoral;
+}
+.item{
+  display: grid;
+  gap: 40px;
+}
+.b-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.b-item-02 {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.b-item-03 {
+  cursor: pointer;
+  border-radius: 14px;
+  border: 3px solid lightblue;
+  width: 100px;
+  padding: 5px;
+  color: whitesmoke;
+  font-weight: 800;
+  background-color: lightcoral;
+}
+
+.b-item-02-A {
+  gap: 10px;
+  display: flex;
+}
